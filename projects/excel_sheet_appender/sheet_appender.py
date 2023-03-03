@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""
+Autored by Venkatesh 
+"""
 import os
 import sys
 import pandas as pd
@@ -38,7 +42,7 @@ class SheetAppender:
 
 
 if __name__ == "__main__":
-    APPENDER = SheetAppender(path=r"C:\Users\VPN2COB\Desktop\delete",
+    APPENDER = SheetAppender(path=r"C:\path\to\your\file\directory",
                              sheet_name="Sheet1")
     APPENDER.parse_data()
     APPENDER.write_to_excel()
